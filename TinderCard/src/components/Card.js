@@ -1,5 +1,4 @@
-import React from "react";
-import { View, Text, Image, StyleSheet, Dimensions } from "react-native";
+import { Dimensions, Image, StyleSheet, Text, View } from "react-native";
 
 const { height } = Dimensions.get("window");
 
@@ -17,33 +16,33 @@ const Card = ({ card }) => (
 
 const styles = StyleSheet.create({
   card: {
-    height: height * 0.6,
-    borderRadius: 18,
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 6 },
-    shadowOpacity: 0.1,
-    shadowRadius: 8,
-    elevation: 4,
+    height: height * 0.65,
+    borderRadius: 20,
     backgroundColor: "#fff",
     marginHorizontal: 20,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 5 },
+    shadowOpacity: 0.15,
+    shadowRadius: 10,
+    elevation: 5,
     overflow: "hidden",
   },
   cardImage: {
     width: "100%",
-    height: "70%",
+    height: "75%",
     resizeMode: "cover",
   },
   infoContainer: {
-    padding: 14,
+    padding: 15,
   },
   name: {
     fontSize: 22,
     fontWeight: "bold",
   },
   address: {
-    fontSize: 15,
-    color: "#666",
-    marginTop: 4,
+    fontSize: 16,
+    color: "gray",
+    marginTop: 5,
   },
 });
 

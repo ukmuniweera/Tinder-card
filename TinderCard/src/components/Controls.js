@@ -1,6 +1,5 @@
-import React from "react";
-import { View, TouchableOpacity, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { StyleSheet, TouchableOpacity, View } from "react-native";
 
 const Controls = ({ onLike, onNope }) => (
   <View style={styles.container}>
@@ -16,26 +15,28 @@ const Controls = ({ onLike, onNope }) => (
 const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
-    marginTop: 10,
+    justifyContent: "center",
+    marginTop: 80,
+    marginBottom: 20,
     gap: 40,
   },
   button: {
-    width: 65,
-    height: 65,
-    borderRadius: 33,
+    width: 60,
+    height: 60,
+    borderRadius: 30,
     justifyContent: "center",
     alignItems: "center",
     shadowColor: "#000",
-    shadowOffset: { width: 0, height: 3 },
-    shadowOpacity: 0.2,
-    shadowRadius: 5,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 4,
     elevation: 5,
   },
   like: {
-    backgroundColor: "#27ae60",
+    backgroundColor: "green",
   },
   nope: {
-    backgroundColor: "#e74c3c",
+    backgroundColor: "red",
   },
 });
 
