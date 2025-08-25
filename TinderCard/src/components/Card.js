@@ -1,33 +1,49 @@
 import React from "react";
-import { View, Text, Image, StyleSheet } from "react-native";
+import { View, Text, Image, StyleSheet, Dimensions } from "react-native";
+
+const { height } = Dimensions.get("window");
 
 const Card = ({ card }) => (
   <View style={styles.card}>
     <Image source={{ uri: card.image }} style={styles.cardImage} />
-    <Text>{card.name}</Text>
-    <Text>{card.age}</Text>
-    <Text>{card.address}</Text>
+    <View style={styles.infoContainer}>
+      <Text style={styles.name}>
+        {card.name}, {card.age}
+      </Text>
+      {card.address && <Text style={styles.address}>{card.address}</Text>}
+    </View>
   </View>
 );
 
 const styles = StyleSheet.create({
   card: {
-    flex: 0.65,
-    borderRadius: 8,
-    shadowRadius: 25,
+    height: height * 0.6,
+    borderRadius: 18,
     shadowColor: "#000",
-    shadowOpacity: 0.08,
-    shadowOffset: { width: 0, height: 0 },
-    justifyContent: "center",
-    alignItems: "center",
+    shadowOffset: { width: 0, height: 6 },
+    shadowOpacity: 0.1,
+    shadowRadius: 8,
+    elevation: 4,
     backgroundColor: "#fff",
     marginHorizontal: 20,
+    overflow: "hidden",
   },
   cardImage: {
-    width: 160,
-    height: 200,
+    width: "100%",
+    height: "70%",
     resizeMode: "cover",
-    borderRadius: 8,
+  },
+  infoContainer: {
+    padding: 14,
+  },
+  name: {
+    fontSize: 22,
+    fontWeight: "bold",
+  },
+  address: {
+    fontSize: 15,
+    color: "#666",
+    marginTop: 4,
   },
 });
 
