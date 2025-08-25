@@ -24,7 +24,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>Tinder Clone</Text>
+      <Text style={styles.header}>Tinder</Text>
 
       <View style={styles.swiperContainer}>
         <Swiper
