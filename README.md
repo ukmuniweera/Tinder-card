@@ -67,3 +67,5 @@ TinderClone/
 ---
 
 ## Screen Record 
+
+https://github.com/user-attachments/assets/bc2aa6fe-aafc-4f5c-aeaf-3feef2ba87c1
