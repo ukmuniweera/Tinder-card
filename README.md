@@ -66,9 +66,4 @@ TinderClone/
 
 ---
 
-## Dependencies
-
-* [React Native](https://reactnative.dev/)
-* [Expo](https://expo.dev/)
-* [react-native-deck-swiper](https://github.com/alexbrillant/react-native-deck-swiper)
-* [@expo/vector-icons](https://docs.expo.dev/guides/icons/)
+## Screen Record 
